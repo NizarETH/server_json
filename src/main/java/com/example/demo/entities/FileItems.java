@@ -12,6 +12,7 @@ public class FileItems implements Serializable {
 	 */
 	private static final long serialVersionUID = -7652606305255977858L;
     private int id;
+    private String path_server;
     private String path;
     private String date;
     private String extention;
@@ -35,6 +36,14 @@ public class FileItems implements Serializable {
     private Author author;
     private Witness witness;
     private Accomplice accomplice;
+
+    public String getPath_server() {
+        return path_server;
+    }
+
+    public void setPath_server(String path_server) {
+        this.path_server = path_server;
+    }
 
     public String getLiaison() {
         return liaison;

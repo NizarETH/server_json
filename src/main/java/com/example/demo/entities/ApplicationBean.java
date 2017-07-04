@@ -14,13 +14,30 @@ public class ApplicationBean implements Serializable {
   
     private int id;
 
-
+    private String create_timestamp;
+    private String update_timestamp;
   
      private List<Infraction> infractions = new ArrayList<>();
      private List<Incident> incidents = new ArrayList<>();
      private List<Procedure> procedures = new ArrayList<>();
      private List<Audit> audits = new ArrayList<>();
      private List<Level_Safety> safeties = new ArrayList<>();
+
+    public String getCreate_timestamp() {
+        return create_timestamp;
+    }
+
+    public void setCreate_timestamp(String create_timestamp) {
+        this.create_timestamp = create_timestamp;
+    }
+
+    public String getUpdate_timestamp() {
+        return update_timestamp;
+    }
+
+    public void setUpdate_timestamp(String update_timestamp) {
+        this.update_timestamp = update_timestamp;
+    }
 
     public List<Level_Safety> getSafeties() {
         return safeties;
